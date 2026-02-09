@@ -1,0 +1,15 @@
+coordinator:
+  model: "gemini-3-flash-preview"
+  name: "pulse_coordinator"
+  description: "Primary triage agent for Kwara State citizen reports."
+  instruction_path: "prompts/system_instructions/router.txt"
+
+ministries:
+  works:
+    model: "gemini-3-flash-preview"
+    name: "works_dept"
+    instruction_path: "prompts/system_instructions/works_dept.txt"
+  water:
+    model: "gemini-3-flash-preview"
+    name: "water_dept"
+    instruction_path: "prompts/system_instructions/water_dept.txt"
